@@ -1,3 +1,4 @@
+// Selção de elementos
 const multiplicationForm = document.querySelector("#multiplication-form");
 const numberInput = document.querySelector("#number");
 const multiplicationInput = document.querySelector("#multiplicator");
@@ -17,9 +18,9 @@ const createTable = (number, multiplicatorNumber) => {
     const result = number * i;
 
     const template = `<div class="row">
-            <div class="operation">${number} x ${i} = </div>
-            <div class="result">${result}</div>
-        </div>`;
+            <div class="operation">${number} x ${i} = </div> 
+            <div class="result">${result}</div> 
+          </div>`;
 
     const parser = new DOMParser();
     const htmlTemplate = parser.parseFromString(template, "text/html");
